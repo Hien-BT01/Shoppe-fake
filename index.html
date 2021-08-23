@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Shoppe app</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__nav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <nav class="list-wrapper">
+              <ul class="nav-list">
+                <li class="list-item">
+                  <a href="#">Kênh người bán</a>
+                </li>
+                <li class="list-item">
+                  <a href="#">Trở thành người bán Shopee</a>
+                </li>
+                <li class="list-item">
+                  <a href="#">Tải ứng dụng</a>
+                </li>
+                <li class="list-item">
+                  <a href="#">Kết nối</a>
+                </li>
+                <li class="list-item">
+                  <span>Kết nối</span>
+                  <a href="#">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-instagram-square"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="pri-infor">
+              <ul>
+                <li class="infor-link">
+                  <a href="#">
+                    <i class="far fa-bell"></i>
+                    <span>Thông báo</span>
+                  </a>
+                </li>
+                <li class="infor-link">
+                  <a href="#">
+                    <i class="far fa-question-circle"></i>
+                    <span>Hỗ trợ</span>
+                  </a>
+                </li>
+                <li class="infor-link">
+                  <a href="#" class="log in">Đăng nhập</a>
+                  <a href="#" class="log out">Đăng ký</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="search-wrapper">
+            <div class="logo">
+              <img src="./src/images/shopee.png" alt="shopee-logo" />
+            </div>
+            <div class="search-section">
+              <div class="search-bar">
+                <div class="search-input">
+                  <input
+                    type="text"
+                    placeholder="Tìm sản phẩm, thương hiệu, và tên shop"
+                  />
+                  <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+                <ul class="search-options">
+                  <li class="option">
+                    <a href="#">
+                      <span>Váy</span>
+                    </a>
+                  </li>
+                  <li class="option">
+                    <a href="#">
+                      <span>Áo Phong</span>
+                    </a>
+                  </li>
+                  <li class="option">
+                    <a href="#">
+                      <span>Quần</span>
+                    </a>
+                  </li>
+                  <li class="option">
+                    <a href="#">
+                      <span>Bông Tẩy Trang</span>
+                    </a>
+                  </li>
+                  <li class="option">
+                    <a href="#">
+                      <span>Balo</span>
+                    </a>
+                  </li>
+                  <li class="option">
+                    <a href="#">
+                      <span>Dép</span>
+                    </a>
+                  </li>
+                  <li class="option">
+                    <a href="#">
+                      <span>Khẩu Trang</span>
+                    </a>
+                  </li>
+                  <li class="option">
+                    <a href="#">
+                      <span>Bánh Tráng</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="search-cart">
+              <div class="icon-cart">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="cart-infor" style="display: none">
+                <div class="cart-status">
+                  <div class="cart-status-none__img">
+                    <img
+                      src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/9bdd8040b334d31946f49e36beaf32db.png"
+                      alt="status-img"
+                    />
+                  </div>
+                  <p class="cart-status-none__text">No product now</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="advertise-pay">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 big-advertisement pl-0 col-md-8 col-sm-12">
+            <div class="ad-images">
+              <div class="owl-carousel owl-theme owl-loaded owl-carousel0">
+                <div class="owl-stage-outer">
+                  <div class="owl-stage">
+                    <div class="owl-item">
+                      <div class="image">
+                        <img
+                          src="https://cf.shopee.vn/file/36d07c0c9ced9fa869de2b8c6330bfc3_xxhdpi"
+                          alt="advertisement"
+                        />
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div class="image">
+                        <img
+                          src="https://cf.shopee.vn/file/3dcaea915b18a853fdef3e3895743468_xxhdpi"
+                          alt="advertisement"
+                        />
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div class="image">
+                        <img
+                          src="https://cf.shopee.vn/file/9b526389354468876e49b3c90624d46d_xxhdpi"
+                          alt="advertisement"
+                        />
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div class="image">
+                        <img
+                          src="https://cf.shopee.vn/file/a85f5616a3d3afdcbebabbcca30682a7_xxhdpi"
+                          alt="advertisement"
+                        />
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div class="image">
+                        <img
+                          src="https://cf.shopee.vn/file/f986d8fda7fff65a19b27dd531d4787b_xxhdpi"
+                          alt="advertisement"
+                        />
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div class="image">
+                        <img
+                          src="https://cf.shopee.vn/file/41267b050a87327f6cdff487ba14ed41_xxhdpi"
+                          alt="advertisement"
+                        />
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div class="image">
+                        <img
+                          src="https://cf.shopee.vn/file/191e0799e0ac13ce528aa796f47c379d_xxhdpi"
+                          alt="advertisement"
+                        />
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div class="image">
+                        <img
+                          src="https://cf.shopee.vn/file/579244558187bf87b2a95fed2e523c80_xxhdpi"
+                          alt="advertisement"
+                        />
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div class="image">
+                        <img
+                          src="https://cf.shopee.vn/file/1f44304c8154d2ef480ff9733958d750_xxhdpi"
+                          alt="advertisement"
+                        />
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div class="image">
+                        <img
+                          src="https://cf.shopee.vn/file/24f3dc3f65887889b2603afb6ccb4ea2_xxhdpi"
+                          alt="advertisement"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 small-ad pl-0 col-md-4 col-sm-12">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="ad-image">
+                  <img
+                    src="https://cf.shopee.vn/file/cdb529c03598d901a06c6ab281584b52_xhdpi"
+                    alt="advertise"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="ad-image">
+                  <img
+                    src="https://cf.shopee.vn/file/ddf4f8bd0bb39877bec4e2bf15ae8c75_xhdpi"
+                    alt="advertise"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pay-method">
+          <div class="pay-options">
+            <div class="pay-option">
+              <a href="#">
+                <img
+                  src="https://cf.shopee.vn/file/53d059b1f2592c05b8df8ae835950a2b_xhdpi"
+                  alt="method"
+                />
+                <p>Yên Tâm mua hàng</p>
+              </a>
+            </div>
+            <div class="pay-option">
+              <a href="#">
+                <img
+                  src="https://cf.shopee.vn/file/9da9a3acb5520d601f86a90434f455a5_xhdpi"
+                  alt="method"
+                />
+                <p>Hoàn xu 20% - Đơn Từ 0Đ</p>
+              </a>
+            </div>
+            <div class="pay-option">
+              <a href="#">
+                <img
+                  src="https://cf.shopee.vn/file/0c09ab833bc29cb260e9b14794c56977_xhdpi"
+                  alt="method"
+                />
+                <p>Nạp thẻ, hóa đơn & e-...</p>
+              </a>
+            </div>
+            <div class="pay-option">
+              <a href="#">
+                <img
+                  src="https://cf.shopee.vn/file/c7decf2ed8cf3b8f03e8595a808bae03_xhdpi"
+                  alt="method"
+                />
+                <p>Shopee Số gì Đây</p>
+              </a>
+            </div>
+            <div class="pay-option">
+              <a href="#">
+                <img
+                  src="https://cf.shopee.vn/file/6a574d8298eed44c1062a5f1408e4c2b_xhdpi"
+                  alt="method"
+                />
+                <p>Freeship Xtra 70k mỗi ngày</p>
+              </a>
+            </div>
+            <div class="pay-option">
+              <a href="#">
+                <img
+                  src="https://cf.shopee.vn/file/7971053d6c5db79f83079c7a3d7e6408_xhdpi"
+                  alt="method"
+                />
+                <p>hàng hiệu -50% - voucher 888k</p>
+              </a>
+            </div>
+            <div class="pay-option">
+              <a href="#">
+                <img
+                  src="https://cf.shopee.vn/file/a08ab28962514a626195ef0415411585_xhdpi"
+                  alt="method"
+                />
+                <p>hàng quốc tế</p>
+              </a>
+            </div>
+            <div class="pay-option">
+              <a href="#">
+                <img
+                  src="https://cf.shopee.vn/file/0a3e3aa16b083d6b7e2c25a8f2c16731_xhdpi"
+                  alt="method"
+                />
+                <p>shopee premium</p>
+              </a>
+            </div>
+            <div class="pay-option">
+              <a href="#">
+                <img
+                  src="https://cf.shopee.vn/file/0a3e3aa16b083d6b7e2c25a8f2c16731_xhdpi"
+                  alt="method"
+                />
+                <p>tech zone - siêu thị điện tử</p>
+              </a>
+            </div>
+            <div class="pay-option">
+              <a href="#">
+                <img
+                  src="https://cf.shopee.vn/file/b3535d7e56c58c4ebe9a87672d38cc5e_xhdpi"
+                  alt="method"
+                />
+                <p>gì cũng rẻ - từ 1k</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="shopee-banner">
+          <div class="banner-img">
+            <img
+              src="https://cf.shopee.vn/file/61170aedad0fb6e10037573584ab0b03_xxhdpi"
+              alt="banner"
+            />
+          </div>
+        </div>
+        <div class="top-product">
+          <div class="top-product__img">
+            <img
+              src="https://cf.shopee.vn/file/db996e66d2d11c263829dc3b1a62d5dd"
+              alt="banner"
+            />
+          </div>
+          <div class="content">
+            <div class="hot-content">
+              <div class="hot-content__left">
+                <div class="hot-content__header">
+                  <h2>sản phẩm bán chạy</h2>
+                  <p>
+                    <span>xem thêm</span>
+                    <i class="fas fa-angle-right"></i>
+                  </p>
+                </div>
+                <div class="hot-content__desc">
+                  <div class="row">
+                    <div class="col-lg-4 px-0">
+                      <a class="desc">
+                        <div>
+                          <img
+                            src="https://cf.shopee.vn/file/2474dcd7d8a770fbb862d9fac880e90b_tn"
+                            alt="product"
+                          />
+                        </div>
+                        <p class="price"><span>đ</span>139.000</p>
+                      </a>
+                    </div>
+                    <div class="col-lg-4 px-0">
+                      <a class="desc">
+                        <div>
+                          <img
+                            src="https://cf.shopee.vn/file/fa87de1f531723e841165cde56598bd1_tn"
+                            alt="product"
+                          />
+                        </div>
+                        <div class="sale">
+                          <span>31%</span>
+                          <span>giảm</span>
+                        </div>
+                        <p class="price"><span>đ</span>99.000</p>
+                      </a>
+                    </div>
+                    <div class="col-lg-4 px-0">
+                      <a class="desc">
+                        <div>
+                          <img
+                            src="https://cf.shopee.vn/file/c3b96fadcc6a9e94e8e94d61c2c5c81f_tn"
+                            alt="product"
+                          />
+                        </div>
+                        <div class="sale">
+                          <span>31%</span>
+                          <span>giảm</span>
+                        </div>
+                        <p class="price"><span>đ</span>139.00</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hot-content__right">
+                <div class="hot-content__header">
+                  <h2>thương hiệu nổi bật</h2>
+                  <p>
+                    <span>xem thêm</span>
+                    <i class="fas fa-angle-right"></i>
+                  </p>
+                </div>
+                <div class="hot-content__desc">
+                  <div class="row">
+                    <div class="col-lg-4 px-0">
+                      <a class="desc">
+                        <div>
+                          <img
+                            src="https://cf.shopee.vn/file/https%3A%2F%2Fcf.shopee.vn%2Ffile%2F0020175f4c73ffb7d82eea37724fe423"
+                            alt="product"
+                          />
+                        </div>
+                        <p class="price">da sạch khỏe...</p>
+                      </a>
+                    </div>
+                    <div class="col-lg-4 px-0">
+                      <a class="desc">
+                        <div>
+                          <img
+                            src="https://cf.shopee.vn/file/https%3A%2F%2Fcf.shopee.vn%2Ffile%2Fd76b81acc530390fc1367aeb1534ac45"
+                            alt="product"
+                          />
+                        </div>
+                        <p class="price">Deli vietnam</p>
+                      </a>
+                    </div>
+                    <div class="col-lg-4 px-0">
+                      <a class="desc">
+                        <div>
+                          <img
+                            src="https://cf.shopee.vn/file/https%3A%2F%2Fcf.shopee.vn%2Ffile%2Fdc4846cf6c6e0e28441bf28bab36543f"
+                            alt="product"
+                          />
+                        </div>
+                        <p class="price">sach ez giảm</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-product__img">
+            <img
+              src="https://cf.shopee.vn/file/9bfdfa512e31b54317b4964b3755fe0c"
+              alt="banner"
+            />
+          </div>
+        </div>
+        <div class="products">
+          <h1>danh mục</h1>
+          <div class="category-wrapper">
+            <div class="category-products"></div>
+            <div class="angle-right">
+              <div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </div>
+            <div class="angle-left">
+              <div>
+                <i class="fas fa-angle-left"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flash-sale">
+          <div class="flash-sale__header">
+            <div class="flash-sale__title">
+              <div class="flash-sale__logo">
+                <img
+                  src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/fb1088de81e42c4e538967ec12cb5caa.png"
+                  alt="sale-image"
+                />
+              </div>
+              <div class="sale-countdown">
+                <span class="time hour">00</span>
+                <span class="time minute">00</span>
+                <span class="time second">00</span>
+              </div>
+            </div>
+            <div class="flash-sale__more">
+              <span>Xem tất cả</span>
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="flash-sale__content">
+            <div class="flash-sale__products">
+              <a href="#" class="flash-sale__product">
+                <div class="sale__image">
+                  <img
+                    src="https://cf.shopee.vn/file/c26c0cf33c957e80b7c018762b5ce534_tn"
+                    alt="sale-product"
+                  />
+                </div>
+                <div class="sale">
+                  <span>43%</span>
+                  <span>giảm</span>
+                </div>
+                <div class="price">
+                  <span>đ</span>
+                  <span>313.000</span>
+                </div>
+                <div class="state-sold">
+                  <div class="progress-state">
+                    <div class="progress-by__text">đã bán 6</div>
+                    <div class="progress-by__img" style="left: 2rem"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="flash-sale__product">
+                <div class="sale__image">
+                  <img
+                    src="https://cf.shopee.vn/file/851c40553981762cb89ae4bce244b917_tn"
+                    alt="sale-product"
+                  />
+                </div>
+                <div class="sale">
+                  <span>27%</span>
+                  <span>giảm</span>
+                </div>
+                <div class="price">
+                  <span>đ</span>
+                  <span>55.000</span>
+                </div>
+                <div class="state-sold">
+                  <div class="progress-state">
+                    <div class="progress-by__text">đã bán 6</div>
+                    <div class="progress-by__img" style="left: 1.5rem"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="flash-sale__product">
+                <div class="sale__image">
+                  <img
+                    src="https://cf.shopee.vn/file/dca922240bc4eaec03519fad616b664f_tn"
+                    alt="sale-product"
+                  />
+                </div>
+                <div class="sale">
+                  <span>15%</span>
+                  <span>giảm</span>
+                </div>
+                <div class="price">
+                  <span>đ</span>
+                  <span>58.000</span>
+                </div>
+                <div class="state-sold">
+                  <div class="progress-state">
+                    <div class="progress-by__text">đã bán 2</div>
+                    <div class="progress-by__img" style="left: 3rem"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="flash-sale__product">
+                <div class="sale__image">
+                  <img
+                    src="https://cf.shopee.vn/file/3653cc446ccfbfb5aa18fc4916e77e61_tn"
+                    alt="sale-product"
+                  />
+                </div>
+                <div class="sale">
+                  <span>13%</span>
+                  <span>giảm</span>
+                </div>
+                <div class="price">
+                  <span>đ</span>
+                  <span>59.000</span>
+                </div>
+                <div class="state-sold">
+                  <div class="progress-state">
+                    <div class="progress-by__text">đã bán 0</div>
+                    <div class="progress-by__img"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="flash-sale__product">
+                <div class="sale__image">
+                  <img
+                    src="https://cf.shopee.vn/file/d2fb5fcd566eb658aa8b51ef10368c48_tn"
+                    alt="sale-product"
+                  />
+                </div>
+                <div class="sale">
+                  <span>61%</span>
+                  <span>giảm</span>
+                </div>
+                <div class="price">
+                  <span>đ</span>
+                  <span>70.300</span>
+                </div>
+                <div class="state-sold">
+                  <div class="progress-state">
+                    <div class="progress-by__text">đã bán 0</div>
+                    <div class="progress-by__img"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="flash-sale__product">
+                <div class="sale__image">
+                  <img
+                    src="https://cf.shopee.vn/file/789c67936f39f06014d12a5577db2fd9_tn"
+                    alt="sale-product"
+                  />
+                </div>
+                <div class="sale">
+                  <span>90%</span>
+                  <span>giảm</span>
+                </div>
+                <div class="price">
+                  <span>đ</span>
+                  <span>37.500</span>
+                </div>
+                <div class="state-sold">
+                  <div class="progress-state">
+                    <div class="progress-by__text">đã bán 2</div>
+                    <div class="progress-by__img" style="left: 3rem"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="special-sale">
+          <div class="row">
+            <div class="col-lg-4 px-0">
+              <a href="#">
+                <img
+                  src="https://cf.shopee.vn/file/3abfc97d78f720d5882e953efa523df2"
+                  alt="sale"
+                />
+              </a>
+            </div>
+            <div class="col-lg-4 px-0">
+              <a href="#">
+                <img
+                  src="https://cf.shopee.vn/file/6485ed03658774c58fca33f9aec7a8b3"
+                  alt="sale"
+                />
+              </a>
+            </div>
+            <div class="col-lg-4 px-0">
+              <a href="#">
+                <img
+                  src="https://cf.shopee.vn/file/a8f34afc680723e704e5bdd582f6f6dd"
+                  alt="sale"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mall-section">
+          <div class="mall-section__header">
+            <div class="mall-section__header-left">
+              <a href="#">Shopee mall</a>
+              <div class="mall-section__benefit">
+                <span><i class="fas fa-backward"></i></span>
+                <span>7 ngày miễn phí trả hàng</span>
+              </div>
+              <div class="mall-section__benefit">
+                <span><i class="fas fa-shield-alt"></i></span>
+                <span>hàng chính hãng 100%</span>
+              </div>
+              <div class="mall-section__benefit">
+                <span><i class="fas fa-truck"></i></span>
+                <span>miễn phí vận chuyển</span>
+              </div>
+            </div>
+            <div class="mall-section__header-right">
+              <a href="#" class="more">
+                <span>Xem tất cả</span>
+                <span><i class="fas fa-chevron-right"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="mall-section__content">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="mall-section__content-left">
+                  <div class="owl-carousel owl-theme owl-loaded owl-carousel1">
+                    <div class="owl-stage-outer">
+                      <div class="owl-stage">
+                        <div class="owl-item">
+                          <div class="mall-product__image">
+                            <img src="https://cf.shopee.vn/file/d42f69929b65d0909633ddac77d0539e" alt="product-image">
+                          </div>
+                        </div>
+                        <div class="owl-item">
+                          <div class="mall-product__image">
+                            <img src="https://cf.shopee.vn/file/3bf5e4d8388f8b027bda7563f1bb540a" alt="product-image">
+                          </div>
+                        </div>
+                        <div class="owl-item">
+                          <div class="mall-product__image">
+                            <img src="https://cf.shopee.vn/file/7b63d4033dd9e5925d30c69ffe7a5f5d" alt="product-image">
+                          </div>
+                        </div>
+                        <div class="owl-item">
+                          <div class="mall-product__image">
+                            <img src="https://cf.shopee.vn/file/520e78b9beeda21736edd975a3b09084" alt="product-image">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="mall-section__content-right">
+                  <div class="row">
+                    <div class="col-lg-12 mb-4">
+                      <div class="row">
+                        <div class="col-lg-3">
+                          <a href="#" class="mall-product">
+                            <div class="mall-product__image">
+                              <img src="https://cf.shopee.vn/file/6b1d465ff2fc5cdf5f77154c04358c9a_xhdpi" alt="product-image">
+                            </div>
+                            <p class="mall-product__desc">Quà tăng lên tới</p>
+                          </a>
+                        </div>
+                        <div class="col-lg-3">
+                          <a href="#" class="mall-product">
+                            <div class="mall-product__image">
+                              <img src="https://cf.shopee.vn/file/52c139413e7b7e55053ba111c0212b2a_xhdpi" alt="product-image">
+                            </div>
+                            <p class="mall-product__desc">thay lời yêu thương</p>
+                          </a>
+                        </div>
+                        <div class="col-lg-3">
+                          <a href="#" class="mall-product">
+                            <div class="mall-product__image">
+                              <img src="https://cf.shopee.vn/file/e6c6b4341d67ff201380eaf27652910f_xhdpi" alt="product-image">
+                            </div>
+                            <p class="mall-product__desc">săn sale cuồng nhiệt</p>
+                          </a>
+                        </div>
+                        <div class="col-lg-3">
+                          <a href="#" class="mall-product">
+                            <div class="mall-product__image">
+                              <img src="https://cf.shopee.vn/file/7d5ddd21cc10e484de60e12d6c58734e_xhdpi" alt="product-image">
+                            </div>
+                            <p class="mall-product__desc">giảm đến 50%</p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-3">
+                          <a href="#" class="mall-product">
+                            <div class="mall-product__image">
+                              <img src="https://cf.shopee.vn/file/3a598056b48fe4f4211442e404e58f94_xhdpi" alt="product-image">
+                            </div>
+                            <p class="mall-product__desc">ưu đã ngập tràng</p>
+                          </a>
+                        </div>
+                        <div class="col-lg-3">
+                          <a href="#" class="mall-product">
+                            <div class="mall-product__image">
+                              <img src="https://cf.shopee.vn/file/8ed7f3559d63db6d64297d74283a0923_xhdpi" alt="product-image">
+                            </div>
+                            <p class="mall-product__desc">mua là có quà</p>
+                          </a>
+                        </div>
+                        <div class="col-lg-3">
+                          <a href="#" class="mall-product">
+                            <div class="mall-product__image">
+                              <img src="https://cf.shopee.vn/file/26f60ceb52ef0f55629f17e3f604f748_xhdpi" alt="product-image">
+                            </div>
+                            <p class="mall-product__desc">giảm đến 50%</p>
+                          </a>
+                        </div>
+                        <div class="col-lg-3">
+                          <a href="#" class="mall-product">
+                            <div class="mall-product__image">
+                              <img src="https://cf.shopee.vn/file/30296a7572b4fb5d45802862fe8dd2a3_xhdpi" alt="product-image">
+                            </div>
+                            <p class="mall-product__desc">săn deal 0đ</p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="angle-right">
+                    <div>
+                      <i class="fas fa-angle-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-search">
+          <div class="top-search__header">
+            <h2 class="top-search__header-text">tìm kiếm hàng đầu</h2>
+            <a href="#" class="top-search__header-more">
+              <span>Xem tất cả</span>
+              <i class="fas fa-angle-right"></i>
+            </a>
+          </div>
+          <div class="top-search__content">
+            <div class="top-search__products"></div>
+            <div class="angle-right">
+              <div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h1>This is a 1/1000****** Shopee Interface website fake made by Bui The Hien</h1>
+      <div class="contact">
+        <span>Phone Contact: 094826****</span>
+        <div class="contact__social-network">
+          <h2>Contact By</h2>
+          <div class="social-networks">
+            <a href="#">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">©2021 Beast-Valorant</div>
+    </footer>
+    <a href="#" class="hot-sale">
+      <div class="hot-sale__img">
+        <img
+          src="https://cf.shopee.vn/file/1b312f09a78ca0eb1cac8918434dc41d"
+          alt="hot-sale"
+        />
+      </div>
+    </a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./src/js/app.js" type="module"></script>
+  </body>
+</html>

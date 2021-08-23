@@ -1,0 +1,75 @@
+@import "./banner.scss";
+@import "./products.scss";
+@import "./flash_sale.scss";
+@import "./special_sale.scss";
+@import "./mall_section.scss";
+@import "./top_search.scss";
+main {
+  margin-top: 1.6rem;
+  background-color: #f5f5f5;
+  padding-top: 2rem;
+}
+.owl-carousel {
+  position: relative;
+  .owl-dots {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+    margin-bottom: 10px;
+    .owl-dot {
+      outline: none;
+      span {
+        display: inline-block;
+        transition: all 0.3s linear;
+        &:hover {
+          background-color: #da2c46;
+        }
+      }
+      &.active {
+        span {
+          background-color: #da2c46;
+        }
+      }
+    }
+  }
+}
+.angle-left,
+.angle-right {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  div {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefefe;
+    font-size: 18px;
+    transition: all 0.3s linear;
+    color: rgba(0, 0, 0, 0.54);
+    i {
+      font-weight: 700;
+      display: inline-block;
+    }
+  }
+  &:hover > div {
+    width: 50px;
+    height: 50px;
+    i {
+      font-size: 22px;
+    }
+  }
+}
+.angle-left {
+  left: 0;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.angle-right {
+  right: 0;
+  transform: translate(50%, -50%);
+}

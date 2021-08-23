@@ -1,0 +1,90 @@
+.top-search{
+    margin-top: 2rem;
+    background-color: #fefefe;
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 0.1px solid rgba(0, 0, 0, 0.08);
+        padding: 2rem;
+        &-text{
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            color: #EF4D48;
+        }
+        &-more{
+            color: #EF4D48;
+            font-size: 1.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s linear;
+            &:hover{
+                opacity: 0.7;
+                color: #EF4D48;
+            }
+            span{
+                margin-right: 0.5rem;
+                text-transform: capitalize;
+            }
+        }
+    }
+    &__content{
+        position: relative;
+    }
+    &__products{
+        padding: 2rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-gap: 10px;
+    }
+    &__product{
+        position: relative;
+        &:hover{
+            color: #fefefe;
+        }
+        &__img{
+            position: relative;
+            .quantity{
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: 0;
+                padding: 0.8rem 1.2rem;
+                background-color: #BDBDBD;
+                text-align: center;
+                font-size: 1.4rem;
+            }
+        }
+        &__desc{
+            color: #333;
+            font-size: 2rem;
+            text-transform: capitalize;
+            margin-top: 2rem;
+            text-align: center;
+            line-height: 1.4;
+        }
+        .top-brand{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: #EF4D48;
+            color: #fefefe;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -10px;
+                width: 100%;
+                border-style: solid;
+                border-width: 10px 13px 0;
+                border-top-color: #EF4D48;
+            }
+        }
+    }
+}
