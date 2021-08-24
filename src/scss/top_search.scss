@@ -35,11 +35,12 @@
     &__products{
         padding: 2rem 1rem;
         display: grid;
-        grid-template-columns: repeat(6,1fr);
+        grid-template-columns: repeat(auto-fit,minmax(180px, 1fr));
         grid-gap: 10px;
     }
     &__product{
         position: relative;
+        margin-bottom: 1rem;
         &:hover{
             color: #fefefe;
         }

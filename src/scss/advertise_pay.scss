@@ -1,11 +1,11 @@
 .advertise-pay {
   margin-top: 16.5rem;
   .big-advertisement {
-    padding-right: 0.5rem !important
+    padding-right: 0.5rem
   }
   .small-ad {
     .col-lg-12:first-child {
-      padding-bottom: 0.5rem;
+      padding-bottom: 0.2rem;
     }
   }
   .pay-method{
@@ -35,6 +35,35 @@
         }
         &:hover{
           transform: translateY(-0.3rem);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:992px){
+  .small-ad{
+    padding-left: 0;
+  }
+}
+@media screen and (max-width:767px){
+  .advertise-pay{
+    .big-advertisement{
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 1.4rem;
+    }
+    .small-ad{
+      padding:0 ;
+    }
+  }
+}
+@media screen and (max-width:567px){
+  .advertise-pay{
+    .small-ad{
+      .row{
+        .small-first{
+          margin-bottom: 0.5rem;
         }
       }
     }

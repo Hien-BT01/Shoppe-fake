@@ -14,6 +14,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .nav-menu{
+      display: none;
+      cursor: pointer;
+    }
     .list-wrapper,
     .pri-infor {
       ul {
@@ -33,6 +37,7 @@ header {
     }
     .list-wrapper {
       ul {
+        display: flex;
         .list-item:not(:last-of-type) {
           margin-right: 0.8rem;
           padding-right: 1rem;
@@ -44,6 +49,19 @@ header {
             margin-right: 0.5rem;
           }
         }
+      }
+      &::after{
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        max-height: 0;
+        max-width: 0;
+        z-index: 100;
+        transition: all 0.5s linear;
       }
     }
     .pri-infor {
@@ -58,6 +76,25 @@ header {
             padding-right: 1.2rem;
             border-right: 1px solid #fefefe9d;
           }
+        }
+      }
+    }
+    &.nav-active{
+      .list-wrapper{
+        opacity: 1;
+        max-width: 300px;
+        max-height: 100%;
+        pointer-events: visible;
+        &::after{
+          max-width: 100%;
+          max-height: 100%;
+          z-index: -1;
+        }
+        .nav-list{
+          max-width: 30rem;
+          max-height: 100%;
+          opacity: 1;
+          pointer-events: visible;
         }
       }
     }
@@ -132,6 +169,82 @@ header {
         i{
           font-size: 2rem;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:991px){
+  header{
+    .nav-wrapper{
+      .nav-menu{
+        display: block;
+        font-size: 24px;
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        z-index: 1000;
+      }
+      .list-wrapper{
+        position: fixed;
+        max-width:0;
+        max-height: 0;
+        opacity: 0;
+        z-index: 500;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transition: all 0.5s linear;
+        left: 0;
+        pointer-events:none;
+        .nav-list{
+          flex-direction: column;
+          align-items: flex-start;
+          height: 100%;
+          background: linear-gradient(-180deg, #f53d2d, #ff6633b8);
+          li.list-item{
+            border-right: none;
+            padding: 2rem 0 0 2.4rem;
+            &:not(:last-of-type){
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+    .search-wrapper{
+      .logo{
+        display: none;
+      }
+      .search-options{
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+}
+@media screen and (max-width:600px){
+  header{
+    .nav-wrapper{
+      .pri-infor{
+        font-size: 1.2rem;
+      }
+    }
+    .search-wrapper{
+      flex-direction: column;
+      align-items: flex-end;
+      .search-section{
+        width: 100%;
+        .search-bar{
+          .option{
+            font-size: 0.8rem;
+            &:not(:last-of-type){
+              margin-right: 0.8rem !important;
+            }
+          }
+        }
+      }
+      .search-cart{
+        margin-bottom: 0.8rem;
       }
     }
   }

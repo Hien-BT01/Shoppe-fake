@@ -28,6 +28,9 @@
         transition: all 0.3s linear;
         cursor: pointer;
         font-size: 1.4rem;
+        span{
+          margin-right: 0.2rem;
+        }
         &:hover {
           opacity: 0.8;
         }
@@ -49,7 +52,7 @@
         cursor: pointer;
         display: block;
         color: rgb(208, 1, 27); 
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         position: relative;
         background-color: #fff;
         padding: 1.4rem 1rem 0 1rem;
@@ -61,6 +64,19 @@
             vertical-align: top;
             text-decoration: underline;
           }
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width:768px) {
+  .content{
+    .hot-content{
+      &__header{
+        flex-direction: column;
+        h2{
+          font-size: 1.4rem;
+          margin-bottom: 0.5rem;
         }
       }
     }
