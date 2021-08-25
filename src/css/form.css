@@ -1,0 +1,333 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fefefe;
+}
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+body .container-form {
+  background-image: url("https://wallpaperaccess.com/full/2926791.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+body .switch-active .forms::after {
+  left: 50%;
+}
+
+.forms {
+  max-width: 800px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  background-image: linear-gradient(66.19deg, rgba(48, 37, 37, 0.1568) 9.36%, rgba(111, 81, 81, 0.1204) 46.36%, rgba(154, 128, 128, 0.2156) 94.32%);
+  max-height: 60rem;
+  height: 100%;
+  padding: 4rem;
+  align-content: center;
+  position: relative;
+  box-shadow: 0px 0px 30px 8px rgba(0, 0, 0, 0.31);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.forms::after {
+  content: "";
+  position: absolute;
+  background-image: url("https://www.wallpaperbetter.com/wallpaper/154/289/154/cool-backgrounds-2K-wallpaper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s linear;
+  z-index: 2;
+}
+.forms::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 15%, transparent 50%, transparent 80%, rgba(255, 255, 255, 0.1) 100%);
+}
+.forms .form-signup {
+  margin-right: 2rem;
+}
+.forms .form-signin {
+  padding-left: 2rem;
+}
+.forms .form-signin .login-devices {
+  margin-top: 2.5rem;
+}
+.forms .form-signin .login-devices a {
+  display: inline-block;
+  margin: 0 1.4rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fefefe;
+  line-height: 40px;
+  font-size: 24px;
+  transition: all 0.3s linear;
+}
+.forms .form-signin .login-devices a:first-of-type:hover {
+  border: 1px solid #fefefe;
+  color: #0084ff;
+}
+.forms .form-signin .login-devices a:nth-of-type(2):hover {
+  border: 1px solid #fefefe;
+  color: #d32c2c;
+}
+.forms .form-signin .login-devices a:nth-of-type(3):hover {
+  border: 1px solid #fefefe;
+  color: #b4aeaefb;
+}
+.forms .form-signup, .forms .form-signin {
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+.forms .form-signup .form_title, .forms .form-signin .form_title {
+  margin-bottom: 2rem;
+  color: #fefefe;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.forms .form-signup form .box:not(:last-of-type), .forms .form-signin form .box:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+.forms .form-signup form .box .input-field, .forms .form-signin form .box .input-field {
+  width: 90%;
+  position: relative;
+}
+.forms .form-signup form .box .input-field input, .forms .form-signin form .box .input-field input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid #fefefe;
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: transparent;
+  outline: none;
+  color: #fefefe;
+  font-size: 1.4rem;
+}
+.forms .form-signup form .box .input-field input:focus ~ .icon-text, .forms .form-signup form .box .input-field input:valid ~ .icon-text, .forms .form-signin form .box .input-field input:focus ~ .icon-text, .forms .form-signin form .box .input-field input:valid ~ .icon-text {
+  font-size: 1rem;
+  top: -1rem;
+}
+.forms .form-signup form .box .input-field .icon-text, .forms .form-signin form .box .input-field .icon-text {
+  color: #fefefe;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s linear;
+  top: 0;
+  font-size: 1.6rem;
+  pointer-events: none;
+}
+.forms .form-signup form .box .input-field .icon-text i, .forms .form-signin form .box .input-field .icon-text i {
+  margin-right: 0.4rem;
+}
+.forms .form-signup form button, .forms .form-signin form button {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  outline: none;
+  background-image: linear-gradient(270deg, rgba(131, 178, 212, 0.65) 0%, rgba(178, 226, 247, 0.62) 53.44%, rgba(127, 178, 193, 0.58) 100%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fefefe;
+  box-shadow: 0 0 8px 2px rgba(245, 243, 243, 0.51) inset, 0 0 10px 3px rgba(245, 243, 243, 0.51) inset;
+  border-radius: 6px;
+  transition: all 0.5s linear;
+  background-size: 200% 200%;
+}
+.forms .form-signup form button:hover, .forms .form-signin form button:hover {
+  background-position: 200% 300%;
+}
+.forms .form-signup .switch, .forms .form-signin .switch {
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.forms .form-signup .switch::after, .forms .form-signin .switch::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fefefe;
+  transition: all 0.2s linear;
+}
+.forms .form-signup .switch:hover, .forms .form-signin .switch:hover {
+  opacity: 0.8;
+}
+.forms .form-signup .switch:hover::after, .forms .form-signin .switch:hover::after {
+  width: 100%;
+}
+
+/*# sourceMappingURL=form.css.map */

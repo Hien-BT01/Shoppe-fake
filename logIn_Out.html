@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/css/form.css">
+  </head>
+  <body>
+    <div class="container-form">
+      <div class="forms">
+        <div class="form-signup">
+          <h1 class="form_title">Sign Up</h1>
+          <form class="signup" autocomplete="off">
+            <div class="box email-box">
+              <div class="input-field">
+                <input type="text" id="email_box">
+                <div class="icon-text">
+                  <i class="fas fa-user"></i>
+                  <label for="email_box">Email</label>
+                </div>
+              </div>
+            </div>
+            <div class="box password-box">
+              <div class="input-field">
+                <input type="password" id="password_box">
+                <div class="icon-text">
+                  <i class="fas fa-lock"></i>
+                  <label for="password_box">Password</label>
+                </div>
+              </div>
+            </div>
+            <div class="box confirm-box">
+              <div class="input-field">
+                <input type="password" maxlength="20" id="confirm_box">
+                <div class="icon-text">
+                  <label for="confirm_box">Confirm</label>
+                </div>
+              </div>
+            </div>
+            <button type="submit">Sign up</button>
+          </form>
+          <a href="#" class="switch" id="already-acc">Already Have Account?</a>
+        </div>
+        <div class="form-signin">
+          <h1 class="form_title">Log In</h1>
+          <form action="index.html" class="signin" autocomplete="off">
+            <div class="box email-box">
+              <div class="input-field">
+                <input type="text" maxlength="40" id="email-in">
+                <div class="icon-text">
+                  <i class="fas fa-user"></i>
+                  <label for="email_box">Email</label>
+                </div>
+              </div>
+            </div>
+            <div class="box password-box">
+              <div class="input-field">
+                <input type="password" maxlength="20" id="password-in">
+                <div class="icon-text">
+                  <i class="fas fa-lock"></i>
+                  <label for="password_box">Password</label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" >Log in</button>
+          </form>
+          <div class="login-devices">
+            <a href="https://www.facebook.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://mail.google.com">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="https://github.com">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <a href="#" class="switch" id="new-acc">New Account?</a>
+        </div>
+      </div>
+    </div>
+    <script src="./src/js/form.js" type="module"></script>
+  </body>
+</html>
