@@ -475,6 +475,9 @@ header .search-wrapper .search-cart .icon-cart i {
 .advertise-pay .pay-method .pay-options .pay-option a p {
   margin-top: 1rem;
   line-height: 1.6rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .advertise-pay .pay-method .pay-options .pay-option:hover {
   transform: translateY(-0.3rem);
