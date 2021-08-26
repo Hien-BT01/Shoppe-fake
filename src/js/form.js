@@ -12,10 +12,8 @@ const signInPassword = document.querySelector("#password-in")
 
 
 Cookies.set("isLog","false", { path: "/" })
-let accounts = [{
-    userName:"hienbui27g@gmail.com",
-    password:"123456789"
-}];
+
+let accounts = JSON.parse(localStorage.getItem("accountList")) || [];
 
 function goNewAccount(){
     container.classList.add("switch-active"); 
@@ -43,6 +41,7 @@ function signUp(e){
         accounts = [...accounts,userAccount]
         alert("Sign up sucessfully")
         container.classList.remove("switch-active");
+        localStorage.setItem("accountList",JSON.stringify(accounts));
     }else{
         alert("This email has already existed")
     }
