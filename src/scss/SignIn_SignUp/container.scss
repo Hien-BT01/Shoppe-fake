@@ -22,3 +22,23 @@ body{
         }
     }
 }
+@media screen and (max-width:719px){
+    body{
+        .switch-active{
+            .forms{
+                &::after{
+                    top: 50%;
+                    left: 0;
+                }
+            }
+        }
+        .forms{
+            .form-signup{
+                margin-bottom: 2rem;
+            }
+            .form-signin{
+                padding-top: 2rem;
+            }
+        }
+    }
+}

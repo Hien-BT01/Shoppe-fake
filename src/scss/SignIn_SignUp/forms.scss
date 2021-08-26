@@ -167,3 +167,11 @@
         }
     }
 }
+@media screen and (max-width:719px){
+    .forms{
+        &::after{
+            height: 50%;
+            width: 100%;
+        }
+    }
+}

@@ -18,6 +18,7 @@ function goNewAccount(){
 
 function goAlreadyHaveAccount(){
     container.classList.remove("switch-active")
+    console.log(true);
     signUpEmailField.value = ""
     signUpPasswordField.value = ""
     signUpConfirmPasswordField.value = ""

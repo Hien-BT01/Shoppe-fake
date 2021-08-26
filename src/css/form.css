@@ -171,6 +171,18 @@ body .switch-active .forms::after {
   left: 50%;
 }
 
+@media screen and (max-width: 719px) {
+  body .switch-active .forms::after {
+    top: 50%;
+    left: 0;
+  }
+  body .forms .form-signup {
+    margin-bottom: 2rem;
+  }
+  body .forms .form-signin {
+    padding-top: 2rem;
+  }
+}
 .forms {
   max-width: 800px;
   width: 100%;
@@ -328,6 +340,13 @@ body .switch-active .forms::after {
 }
 .forms .form-signup .switch:hover::after, .forms .form-signin .switch:hover::after {
   width: 100%;
+}
+
+@media screen and (max-width: 719px) {
+  .forms::after {
+    height: 50%;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=form.css.map */
