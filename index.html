@@ -74,8 +74,15 @@
                   </a>
                 </li>
                 <li class="infor-link">
-                  <a href="#" class="log in">Đăng nhập</a>
-                  <a href="#" class="log out">Đăng ký</a>
+                  <a href="./logIn_Out.html" class="log in" target="_blank">Đăng nhập / Đăng ký</a>
+                  <div class="account">
+                    <div class="avatar">
+                      <img src="./src/images/avatar.jpg" alt="gawr gura">
+                      <div class="log-out">
+                        <a href="./logIn_Out.html">Đăng xuất</a>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -891,10 +898,11 @@
         />
       </div>
     </a>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="./src/js/app.js" type="module"></script>
+    <script src="./src/js/app.js" type="module" defer></script>
   </body>
 </html>

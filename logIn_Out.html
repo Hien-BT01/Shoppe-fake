@@ -13,7 +13,7 @@
       <div class="forms">
         <div class="form-signup">
           <h1 class="form_title">Sign Up</h1>
-          <form class="signup" autocomplete="off">
+          <form class="signup" autocomplete="off" onsubmit="signUp(event)">
             <div class="box email-box">
               <div class="input-field">
                 <input type="text" id="email_box">
@@ -42,11 +42,11 @@
             </div>
             <button type="submit">Sign up</button>
           </form>
-          <a href="#" class="switch" id="already-acc">Already Have Account?</a>
+          <a href="#" class="switch" id="already-acc" onclick="goAlreadyHaveAccount()">Already Have Account?</a>
         </div>
         <div class="form-signin">
           <h1 class="form_title">Log In</h1>
-          <form action="index.html" class="signin" autocomplete="off">
+          <form onsubmit="signIn(event)" action="index.html" class="signin" autocomplete="off">
             <div class="box email-box">
               <div class="input-field">
                 <input type="text" maxlength="40" id="email-in">
@@ -78,10 +78,11 @@
               <i class="fab fa-github"></i>
             </a>
           </div>
-          <a href="#" class="switch" id="new-acc">New Account?</a>
+          <a href="#" class="switch" id="new-acc" onclick="goNewAccount()">New Account?</a>
         </div>
       </div>
     </div>
-    <script src="./src/js/form.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
+    <script src="./src/js/form.js"></script>
   </body>
 </html>

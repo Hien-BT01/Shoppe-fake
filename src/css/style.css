@@ -177,15 +177,72 @@ header .nav-wrapper .pri-infor ul {
   display: flex;
   align-items: center;
 }
-header .nav-wrapper .list-wrapper ul li a,
-header .nav-wrapper .pri-infor ul li a {
+header .nav-wrapper .list-wrapper ul li .log,
+header .nav-wrapper .pri-infor ul li .log {
   display: inline-block;
   transition: all 0.3s linear;
 }
-header .nav-wrapper .list-wrapper ul li a:hover,
-header .nav-wrapper .pri-infor ul li a:hover {
+header .nav-wrapper .list-wrapper ul li .log:hover,
+header .nav-wrapper .pri-infor ul li .log:hover {
   color: #fefefe;
   opacity: 0.6;
+}
+header .nav-wrapper .list-wrapper ul li .account,
+header .nav-wrapper .pri-infor ul li .account {
+  position: relative;
+}
+header .nav-wrapper .list-wrapper ul li .account .avatar,
+header .nav-wrapper .pri-infor ul li .account .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+header .nav-wrapper .list-wrapper ul li .account .log-out,
+header .nav-wrapper .pri-infor ul li .account .log-out {
+  position: absolute;
+  min-width: 100px;
+  transform: translateY(5px);
+  padding: 1rem 0 1rem 1.2rem;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+  background-image: linear-gradient(66.19deg, rgba(48, 37, 37, 0.1568) 9.36%, rgba(111, 81, 81, 0.1204) 46.36%, rgba(154, 128, 128, 0.2156) 94.32%);
+  box-shadow: 0px 0px 25px 1px #dcd4d4;
+  background-color: transparent;
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+header .nav-wrapper .list-wrapper ul li .account .log-out::before,
+header .nav-wrapper .pri-infor ul li .account .log-out::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 15%, transparent 50%, transparent 80%, rgba(255, 255, 255, 0.1) 100%);
+}
+header .nav-wrapper .list-wrapper ul li .account .log-out:hover,
+header .nav-wrapper .pri-infor ul li .account .log-out:hover {
+  opacity: 0.7;
+}
+header .nav-wrapper .list-wrapper ul li .account .log-out a:hover,
+header .nav-wrapper .pri-infor ul li .account .log-out a:hover {
+  color: #fefefe;
+}
+header .nav-wrapper .list-wrapper ul li .account .logout-active,
+header .nav-wrapper .pri-infor ul li .account .logout-active {
+  max-height: 100%;
+  opacity: 1;
+  pointer-events: visible;
+}
+header .nav-wrapper .list-wrapper ul li .log-active,
+header .nav-wrapper .pri-infor ul li .log-active {
+  display: none;
 }
 header .nav-wrapper .list-wrapper ul {
   display: flex;
@@ -221,7 +278,6 @@ header .nav-wrapper .pri-infor ul .infor-link:not(:last-of-type) {
 header .nav-wrapper .pri-infor ul .infor-link:last-child a:first-child {
   margin-right: 1.2rem;
   padding-right: 1.2rem;
-  border-right: 1px solid #fefefe9d;
 }
 header .nav-wrapper.nav-active .list-wrapper {
   opacity: 1;

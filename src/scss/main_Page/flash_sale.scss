@@ -49,6 +49,7 @@
         grid-template-columns: repeat(auto-fit,minmax(150px, 180px));
         grid-gap: 15px;
         text-align: center;
+        justify-content: center;
     }
     &__product{
         position: relative;
