@@ -200,23 +200,21 @@ header .nav-wrapper .pri-infor ul li .account .avatar {
   transition: all 0.3s linear;
   cursor: pointer;
 }
-header .nav-wrapper .list-wrapper ul li .account .log-out,
-header .nav-wrapper .pri-infor ul li .account .log-out {
+header .nav-wrapper .list-wrapper ul li .account .setting,
+header .nav-wrapper .pri-infor ul li .account .setting {
   position: absolute;
   min-width: 100px;
-  transform: translateY(5px);
-  padding: 0.8rem 0 1rem 1.2rem;
+  transform: translateY(5px) scaleY(0);
   border-radius: 5px;
   transition: all 0.3s linear;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
   background-color: #fefefe;
-  max-height: 0;
-  opacity: 0;
-  pointer-events: none;
   overflow: hidden;
+  transform-origin: center top;
+  z-index: 600;
 }
-header .nav-wrapper .list-wrapper ul li .account .log-out::before,
-header .nav-wrapper .pri-infor ul li .account .log-out::before {
+header .nav-wrapper .list-wrapper ul li .account .setting::before,
+header .nav-wrapper .pri-infor ul li .account .setting::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -226,19 +224,25 @@ header .nav-wrapper .pri-infor ul li .account .log-out::before {
   height: 100%;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 15%, transparent 50%, transparent 80%, rgba(255, 255, 255, 0.1) 100%);
 }
-header .nav-wrapper .list-wrapper ul li .account .log-out:hover,
-header .nav-wrapper .pri-infor ul li .account .log-out:hover {
-  opacity: 0.7;
-}
-header .nav-wrapper .list-wrapper ul li .account .log-out a,
-header .nav-wrapper .pri-infor ul li .account .log-out a {
+header .nav-wrapper .list-wrapper ul li .account .setting a,
+header .nav-wrapper .pri-infor ul li .account .setting a {
   color: #333;
+  display: block;
+  padding: 0.8rem 0.2rem 1rem 1.2rem !important;
+  margin-right: 0 !important;
+  transition: all 0.3s linear;
+}
+header .nav-wrapper .list-wrapper ul li .account .setting a:not(:last-of-type),
+header .nav-wrapper .pri-infor ul li .account .setting a:not(:last-of-type) {
+  border-bottom: 1px solid #d4c3c347;
+}
+header .nav-wrapper .list-wrapper ul li .account .setting a:hover,
+header .nav-wrapper .pri-infor ul li .account .setting a:hover {
+  background-color: #d4c3c347;
 }
 header .nav-wrapper .list-wrapper ul li .account .logout-active,
 header .nav-wrapper .pri-infor ul li .account .logout-active {
-  max-height: 100%;
-  opacity: 1;
-  pointer-events: visible;
+  transform: translateY(5px) scaleY(1);
 }
 header .nav-wrapper .list-wrapper ul li .log-active,
 header .nav-wrapper .pri-infor ul li .log-active {
@@ -279,30 +283,30 @@ header .nav-wrapper .list-wrapper::after {
 header .nav-wrapper .pri-infor {
   font-size: 1.4rem;
 }
-header .nav-wrapper .pri-infor ul .infor-link:not(:last-of-type) {
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:not(:last-of-type) {
   margin-right: 1.4rem;
 }
-header .nav-wrapper .pri-infor ul .infor-link:not(:last-of-type) .infor {
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:not(:last-of-type) .infor {
   transition: all 0.3s linear;
 }
-header .nav-wrapper .pri-infor ul .infor-link:not(:last-of-type) .infor:hover {
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:not(:last-of-type) .infor:hover {
   color: #fefefe;
   opacity: 0.8;
 }
-header .nav-wrapper .pri-infor ul .infor-link:last-child a:first-child {
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:last-child a:first-child {
   margin-right: 1.2rem;
   padding-right: 1.2rem;
 }
-header .nav-wrapper .pri-infor ul .infor-link:first-of-type {
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type {
   position: relative;
 }
-header .nav-wrapper .pri-infor ul .infor-link:first-of-type:hover .notification {
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type:hover .notification {
   transform: scale(1);
 }
-header .nav-wrapper .pri-infor ul .infor-link:first-of-type .noti-active__login {
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .noti-active__login {
   display: none;
 }
-header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification {
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification {
   position: absolute;
   min-width: 40rem;
   background-color: #fefefe;
@@ -314,10 +318,10 @@ header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification {
   transition: all 0.4s linear;
   z-index: 300;
 }
-header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification .before-login, header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification .after-login {
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .before-login, header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .after-login {
   width: 100%;
 }
-header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification .before-login .befor-login__notification, header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification .after-login .befor-login__notification {
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .before-login .befor-login__notification, header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .after-login .befor-login__notification {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -325,15 +329,15 @@ header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification .befor
   width: 100%;
   height: 31rem;
 }
-header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification .before-login .befor-login__notification .notification-img, header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification .after-login .befor-login__notification .notification-img {
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .before-login .befor-login__notification .notification-img, header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .after-login .befor-login__notification .notification-img {
   width: 100%;
   max-width: 10rem;
   margin-bottom: 1.5rem;
 }
-header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification .before-login .befor-login__notification p, header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification .after-login .befor-login__notification p {
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .before-login .befor-login__notification p, header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .after-login .befor-login__notification p {
   color: #333;
 }
-header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification .before-login a.signin, header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification .after-login a.signin {
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .before-login a.signin, header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .after-login a.signin {
   color: #333;
   background-color: #f5f5f5;
   display: block;
@@ -342,11 +346,11 @@ header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification .befor
   line-height: 4rem;
   transition: all 0.3s linear;
 }
-header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification .before-login a.signin:hover, header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification .after-login a.signin:hover {
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .before-login a.signin:hover, header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .after-login a.signin:hover {
   color: #f53d2d;
   background-color: rgba(83, 76, 76, 0.384);
 }
-header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification::after {
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification::after {
   content: "";
   position: absolute;
   right: 3rem;
@@ -355,7 +359,7 @@ header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification::after
   border-width: 10px;
   border-color: transparent transparent #fefefe transparent;
 }
-header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification::before {
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification::before {
   content: "";
   position: absolute;
   top: -1.5rem;
@@ -363,6 +367,48 @@ header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification::befor
   width: 8rem;
   background-color: transparent;
   height: 30px;
+}
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .after-login h2 {
+  padding: 1.2rem 0 1rem 1rem;
+  color: #52454545;
+  border-bottom: 1px solid #a9979740;
+}
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .after-login .vouchers .list-vouchers {
+  display: block;
+}
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .after-login .vouchers .list-vouchers .voucher-item {
+  padding: 1.2rem;
+  border-bottom: 1px solid #a9979740;
+  transition: all 0.3s linear;
+}
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .after-login .vouchers .list-vouchers .voucher-item:hover {
+  background-color: #eadada40;
+}
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .after-login .vouchers .list-vouchers .voucher-item a {
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .after-login .vouchers .list-vouchers .voucher-item a .voucher-img {
+  flex-basis: 25%;
+  margin-right: 1.2rem;
+}
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .after-login .vouchers .list-vouchers .voucher-item a .voucher-desc h3 {
+  margin-bottom: 1.2rem;
+}
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .after-login .vouchers .list-vouchers .voucher-item a .voucher-desc p {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.54);
+}
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .after-login .vouchers .show-vouchers {
+  color: #333;
+  display: block;
+  text-align: center;
+  padding: 1.4rem 0;
+  background-color: #fcfcfc;
+}
+header .nav-wrapper .pri-infor .pri-infor__list .infor-link:first-of-type .notification .after-login .vouchers .show-vouchers:hover {
+  background-color: #eadada40;
 }
 header .nav-wrapper.nav-active .list-wrapper {
   opacity: 1;
@@ -375,12 +421,6 @@ header .nav-wrapper.nav-active .list-wrapper::after {
   max-height: 100%;
   z-index: -1;
 }
-header .nav-wrapper.nav-active .list-wrapper .nav-list {
-  max-width: 30rem;
-  max-height: 100%;
-  opacity: 1;
-  pointer-events: visible;
-}
 header .search-wrapper {
   display: flex;
   justify-content: space-between;
@@ -392,7 +432,7 @@ header .search-wrapper .logo {
 }
 header .search-wrapper .search-section {
   padding-top: 2rem;
-  width: calc(70% - 50px);
+  width: calc(77% - 50px);
 }
 header .search-wrapper .search-section .search-bar {
   display: flex;
@@ -405,7 +445,7 @@ header .search-wrapper .search-section .search-bar .search-input {
 header .search-wrapper .search-section .search-bar .search-input input {
   width: 100%;
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   border: none;
   outline: none;
 }
@@ -415,8 +455,8 @@ header .search-wrapper .search-section .search-bar .search-input .search-icon {
   top: 3px;
   right: 4px;
   background-color: #fb5533;
-  padding: 0.9rem 2rem;
-  border-radius: 5px;
+  padding: 0.9rem 2.4rem;
+  border-radius: 2px;
   transition: all 0.5s linear;
 }
 header .search-wrapper .search-section .search-bar .search-input .search-icon i {
@@ -443,15 +483,66 @@ header .search-wrapper .search-section .search-bar .search-options .option a:hov
   opacity: 0.7;
 }
 header .search-wrapper .search-cart {
-  width: 10%;
+  width: 3%;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+header .search-wrapper .search-cart:hover > .cart-infor {
+  transform: scale(1);
 }
 header .search-wrapper .search-cart .icon-cart {
   cursor: pointer;
 }
 header .search-wrapper .search-cart .icon-cart i {
   font-size: 2rem;
+}
+header .search-wrapper .search-cart .cart-infor {
+  background-color: #eadada;
+  position: absolute;
+  top: 3.5rem;
+  min-width: 34rem;
+  right: 0;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: all 0.4s linear;
+  cursor: pointer;
+  z-index: 400;
+  height: 32rem;
+}
+header .search-wrapper .search-cart .cart-infor .cart-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+header .search-wrapper .search-cart .cart-infor .cart-status-none__img {
+  max-width: 10rem;
+  margin-bottom: 2rem;
+}
+header .search-wrapper .search-cart .cart-infor .cart-status-none__text {
+  color: #333;
+}
+header .search-wrapper .search-cart .cart-infor::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -2rem;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent #eadada transparent;
+}
+header .search-wrapper .search-cart .cart-infor::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  right: 0;
+  width: 8rem;
+  background-color: transparent;
+  height: 30px;
+  z-index: 200;
 }
 
 @media screen and (max-width: 991px) {
@@ -489,16 +580,16 @@ header .search-wrapper .search-cart .icon-cart i {
   header .nav-wrapper .list-wrapper .nav-list li.list-item:not(:last-of-type) {
     margin-bottom: 1rem;
   }
-  header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification {
+  header .nav-wrapper .pri-infor ul.pri-infor__list .infor-link:first-of-type .notification {
     transform-origin: top left;
     min-width: 28rem;
     left: 0;
   }
-  header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification::after {
+  header .nav-wrapper .pri-infor ul.pri-infor__list .infor-link:first-of-type .notification::after {
     left: 3rem;
     right: 35rem;
   }
-  header .nav-wrapper .pri-infor ul .infor-link:first-of-type .notification::before {
+  header .nav-wrapper .pri-infor ul.pri-infor__list .infor-link:first-of-type .notification::before {
     left: 0;
   }
   header .search-wrapper .logo {
@@ -1040,8 +1131,8 @@ header .search-wrapper .search-cart .icon-cart i {
 
 main {
   margin-top: 1.6rem;
-  background-color: #f5f5f5;
   padding-top: 2rem;
+  background: url("https://cf.shopee.vn/file/1c3ed3868e30927512fc02b3e75840f2") center top/100% no-repeat;
 }
 
 .owl-carousel {
@@ -1125,6 +1216,104 @@ main {
   bottom: 5rem;
   display: block;
   z-index: 100;
+}
+
+.change-password__container .change-password__header {
+  position: relative;
+  padding: 2rem;
+  color: #aa9f9f;
+  border-bottom: 1px solid #aa9f9f;
+}
+.change-password__container .change-password__header h2 {
+  font-size: 2rem;
+}
+.change-password__container .change-password__header span {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: rgba(170, 159, 159, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.change-password__container .change-password__header span i {
+  color: #fefefe;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.change-password__container .change-password__header span:hover {
+  background-color: #aa9f9f;
+}
+.change-password__container .change-password__content {
+  height: 35rem;
+  position: fixed;
+  z-index: 1002;
+  top: 50%;
+  left: 50%;
+  max-width: 35rem;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  background: #c9ccd3;
+  background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-blend-mode: lighten;
+  border-radius: 5px;
+}
+.change-password__container .change-password__content form {
+  height: calc(100% - 61px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.change-password__container .change-password__content form .field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+.change-password__container .change-password__content form .field label {
+  width: 12rem;
+  line-height: 1.4;
+  font-size: 1.4rem;
+}
+.change-password__container .change-password__content form .field input {
+  outline: none;
+  padding: 0.5rem 0 0.5rem 1rem;
+  font-size: 1.4rem;
+}
+.change-password__container .change-password__content form .field input:focus::placeholder {
+  color: transparent;
+}
+.change-password__container .change-password__content form button {
+  cursor: pointer;
+  transition: all 0.3s linear;
+  font-size: 1.6rem;
+  display: inline-block;
+  color: #8f8484;
+  outline: none;
+  border: 0.5px solid #333;
+  padding: 0.8rem 2rem;
+  border-radius: 2px;
+}
+.change-password__container .change-password__content form button:hover {
+  color: #353232;
+  background-color: #9b8e8e96;
+  border-color: #323333;
+}
+.change-password__container::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 200;
 }
 
 footer {

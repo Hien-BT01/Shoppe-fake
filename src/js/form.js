@@ -28,6 +28,10 @@ function goAlreadyHaveAccount(){
 }
 function signUp(e){
     e.preventDefault();
+    if(signUpEmailField.value.length < 5 || signUpPasswordField.value.length < 8){
+        alert("Your value is too Short, please use other password is greater than 8 characters and email is greater than 5 characters")
+        return;
+    }
     if(signUpPasswordField.value !== signUpConfirmPasswordField.value){
         alert("Confirmed password is different from original password")
         return;
@@ -63,6 +67,7 @@ function signIn(e){
         return;
     }
     Cookies.set("isLog","true")
+    Cookies.set("username",`${signInEmail.value}`)
 }
 
 

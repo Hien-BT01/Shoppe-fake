@@ -60,12 +60,12 @@
               </ul>
             </nav>
             <nav class="pri-infor">
-              <ul>
+              <ul class="pri-infor__list">
                 <li class="infor-link">
                   <a href="#" class="infor">
                     <i class="far fa-bell"></i>
                     <span>Thông báo</span>
-                    <div class="notification">
+                    <div  iv class="notification">
                       <div class="before-login">
                         <div class="befor-login__notification">
                           <div class="notification-img">
@@ -75,7 +75,76 @@
                         </div>
                         <a href="./logIn_Out.html" class="signin">Đăng nhập</a>
                       </div>
-                      <div class="after-login noti-active__login"></div>
+                      <div class="after-login noti-active__login">
+                        <h2>Thông báo mới nhận</h2>
+                        <div class="vouchers">
+                          <ul class="list-vouchers">
+                            <li class="voucher-item">
+                              <a href="#">
+                                <div class="voucher-img">
+                                  <img src="https://cf.shopee.vn/file/7b2d120911fbd295dccd6cf986236b85_tn" alt="voucher-image">
+                                </div>
+                                <div class="voucher-desc">
+                                  <h3 class="voucher-desc__title">
+                                    Quà miễn phí, mừng bạn mới
+                                  </h3>
+                                  <p class="voucher-desc__content">🛒 Đơn đầu tiên, mua E-Voucher chỉ 0Đ
+                                    💥 Săn deal cực hot
+                                    👉 Số lượng có hạn, nhanh tay nhận ngay!</p>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="voucher-item">
+                              <a href="#">
+                                <div class="voucher-img">
+                                  <img src="https://cf.shopee.vn/file/7db4a7f4d3c212e8c270364723f60f8a_tn" alt="voucher-image">
+                                </div>
+                                <div class="voucher-desc">
+                                  <h3 class="voucher-desc__title">
+                                    Bạn có voucher sắp hết hạn!
+                                  </h3>
+                                  <p class="voucher-desc__content">Shopee dỗi đó!
+                                    🛒 Mã Freeship sắp hết hạn!
+                                    🎁️ Hàng loạt sản phẩm Flash Sale đang bùng cháy!
+                                    😍 Mua ngay kẻo lỡ nè!</p>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="voucher-item">
+                              <a href="#">
+                                <div class="voucher-img">
+                                  <img src="https://cf.shopee.vn/file/3deef65fc3d2604980c4ce4fcaded346_tn" alt="voucher-image">
+                                </div>
+                                <div class="voucher-desc">
+                                  <h3 class="voucher-desc__title">
+                                    21H! Siêu deal đồng giá 9K chào sàn
+                                  </h3>
+                                  <p class="voucher-desc__content">📲 Săn thêm voucher nạp thẻ 10K
+                                    ✨ Cùng loạt mã Freeship cực hot
+                                    💥 Deal hot hết nhanh - Lẹ vào chốt đơn!</p>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="voucher-item">
+                              <a href="#">
+                                <div class="voucher-img">
+                                  <img src="https://cf.shopee.vn/file/d29cee45b1a08d181c06e5464ff71d1c_tn" alt="voucher-image">
+                                </div>
+                                <div class="voucher-desc">
+                                  <h3 class="voucher-desc__title">
+                                    Ở nhà thư giãn săn deal sốc từ 8K
+                                  </h3>
+                                  <p class="voucher-desc__content">🌟 BST nhà của đời sống chỉ từ 8K
+                                    💕 Đồ bếp, decor, đồ chơi, phụ kiện
+                                    ️🛒 Bao la deal hot - Tha hồ chọn lựa
+                                    💥 Deal nào cũng có - Vào ngay!</p>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                          <a href="#" class="show-vouchers">Xem tất cả</a>
+                        </div>
+                      </div>
                     </div>
                   </a>
                 </li>
@@ -90,8 +159,9 @@
                   <div class="account">
                     <div class="avatar">
                       <img src="./src/images/avatar.jpg" alt="gawr gura">
-                      <div class="log-out">
-                        <a href="./logIn_Out.html">Đăng xuất</a>
+                      <div class="setting">
+                        <a class="change-password">Đổi mật khẩu</a>
+                        <a href="./logIn_Out.html" class="log-out">Đăng xuất</a>
                       </div>
                     </div>
                   </div>
@@ -162,7 +232,7 @@
               <div class="icon-cart">
                 <i class="fas fa-shopping-cart"></i>
               </div>
-              <div class="cart-infor" style="display: none">
+              <div class="cart-infor">
                 <div class="cart-status">
                   <div class="cart-status-none__img">
                     <img
