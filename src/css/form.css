@@ -176,10 +176,13 @@ body .switch-active .forms::after {
     top: 50%;
     left: 0;
   }
-  body .forms .form-signup {
+  body .container-form {
+    margin: auto;
+  }
+  body .container-form .forms .form-signup {
     margin-bottom: 2rem;
   }
-  body .forms .form-signin {
+  body .container-form .forms .form-signin {
     padding-top: 2rem;
     padding-left: 0;
   }
